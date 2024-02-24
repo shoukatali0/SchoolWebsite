@@ -16,8 +16,8 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
+  <!-- <link rel="shortcut icon" href="../eduweb-master/assets/images/favlogo.png" type="image/png"> -->
+  <link rel="shortcut icon" type="image/jpg" href="./assets/images/favicon.ico">
   <!-- 
     - custom css link
   -->
@@ -53,14 +53,14 @@
     <div class="container">
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+        <img src="./assets/images/logo1.png" width="162" height="50" alt="EduWeb logo">
       </a>
 
       <nav class="navbar" data-navbar>
 
         <div class="wrapper">
           <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" width="162" height="50" alt="EduWeb logo">
+            <img src="./assets/images/logo1.png" width="162" height="50" alt="EduWeb logo">
           </a>
 
           <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
@@ -125,18 +125,18 @@
       -->
 
       <section class="section hero has-bg-image" id="home" aria-label="home"
-        style="background-image: url('./assets/images/hero-bg.svg')">
+        style="background-image: url('./assets/images/hero-bg1.svg')" style="border: none">
         <div class="container">
 
           <div class="hero-content">
 
-            <h1 class="h1 section-title">
+            <h1 class="h1 section-title" style="color: white;">
               Welcome to <span class="span" style="font-size: larger;"
               >Sudarshan Gurukul School </p>
               </span> 
             </h1>
 
-            <p class="hero-text">
+            <p class="hero-text" style="color: white; font-weight: bolder;">
               "अमृतम तु विद्या"
             </p>
 
@@ -150,17 +150,19 @@
 
           <figure class="hero-banner">
 
-            <div class="img-holder one" style="--width: 270; --height: 300;">
-              <img src="./assets/images/hero-banner-1.jpg" width="270" height="300" alt="hero banner" class="img-cover">
+            <div class="img-holder" >
+              <img src="./assets/images/front1.jpg" width="300" height="300" class="img-cover" style="border-radius: 30% 70% 67% 33% / 30% 30% 70% 70% ;">
             </div>
-
-            <div class="img-holder two" style="--width: 240; --height: 370;">
-              <img src="./assets/images/hero-banner-2.jpg" width="240" height="370" alt="hero banner" class="img-cover">
-            </div>
-
+<!-- 
+            <div class="img-holder two" style="--width: 240; --height: 250;">
+              <img src="./assets/images/hero-banner-2.jpg" width="240" height="250" alt="hero banner" class="img-cover">
+            </div> -->
+<!-- 
             <img src="./assets/images/hero-shape-1.svg" width="380" height="190" alt="" class="shape hero-shape-1">
 
-            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2">
+            <img src="./assets/images/hero-shape-2.png" width="622" height="551" alt="" class="shape hero-shape-2"> -->
+            <!-- <img src="./assets/images/front1.jpg" width="622" height="551" alt="" class="shape hero-shape-2"> -->
+
 
           </figure>
 
@@ -191,15 +193,15 @@
           <figure class="about-banner">
 
             <div class="img-holder" style="--width: 520; --height: 370;">
-              <img src="./assets/images/about-banner.jpg" width="520" height="370" loading="lazy" alt="about banner"
+              <img src="./assets/images/about.png" width="520" height="370" loading="lazy" alt="about banner"
                 class="img-cover">
             </div>
 <!-- 
             <img src="./assets/images/about-shape-1.svg" width="360" height="420" loading="lazy" alt=""
               class="shape about-shape-1"> -->
 
-            <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
-              class="shape about-shape-2">
+            <!-- <img src="./assets/images/about-shape-2.svg" width="371" height="220" loading="lazy" alt=""
+              class="shape about-shape-2"> -->
 
             <img src="./assets/images/about-shape-3.png" width="722" height="528" loading="lazy" alt=""
               class="shape about-shape-3">
@@ -207,12 +209,16 @@
           </figure>
 
           <div class="about-content">
+            <div class="head1" >
 
             <p class="section-subtitle">About Us</p>
-
-            <h2 class="h2 section-title">
+            
+          </div>
+          <div class="heads">
+            <p id="tagl" style="color: black; font-size: larger; font-weight: bold;">
               "We are here to produce the next generation who are smart and have character"
-            </h2>
+            </p>
+          </div>
 
             <p class="section-text">
               At Sudarshan Gurukul, we believe in nurturing young minds to become confident, compassionate, and responsible global citizens. With a holistic approach to education, we strive to provide a stimulating environment that fosters intellectual, emotional, and social growth.
@@ -624,9 +630,7 @@
         style="background-image: url('./assets/images/blog-bg.svg')">
         <div class="container">
 
-          <p class="section-subtitle">Latest Articles</p>
-
-          <h2 class="h2 section-title">Get News With Eduweb</h2>
+          <p class="section-subtitle">Infrastruture</p>
 
           <ul class="grid-list">
 
@@ -640,38 +644,10 @@
 
                 <div class="card-content">
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
+                    <a href="#" class="card-title">School Building</a>
+                  </h3>         
                 </div>
-
               </div>
             </li>
 
@@ -685,36 +661,10 @@
 
                 <div class="card-content">
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
+  
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
+                    <a href="#" class="card-title">Playground</a>
                   </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
                 </div>
 
               </div>
@@ -730,36 +680,13 @@
 
                 <div class="card-content">
 
-                  <a href="#" class="card-btn" aria-label="read more">
-                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
-                  </a>
-
-                  <a href="#" class="card-subtitle">Online</a>
-
                   <h3 class="h3">
-                    <a href="#" class="card-title">Become A Better Blogger: Content Planning</a>
-                  </h3>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Oct 10, 2021</span>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <ion-icon name="chatbubbles-outline" aria-hidden="true"></ion-icon>
-
-                      <span class="span">Com 09</span>
-                    </li>
-
-                  </ul>
-
-                  <p class="card-text">
-                    Lorem Ipsum Dolor Sit Amet Cons Tetur Adipisicing Sed.
-                  </p>
-
+                    
+                    <a href="#" class="card-title">
+                      laboratory
+                    </a>
+                  </h3>   
+        
                 </div>
 
               </div>

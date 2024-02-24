@@ -15,7 +15,7 @@
 \*-----------------------------------*/
 html{
   scroll-behavior: smooth;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 :root {
@@ -23,12 +23,13 @@ html{
   /**
    * colors
    */
-
+/* blue 2A2F4B */
+/* red ED3237 */
   --selective-yellow: hsl(42, 94%, 55%);
   --eerie-black-1: hsl(0, 0%, 9%);
   --eerie-black-2: hsl(180, 3%, 7%);
   --quick-silver: hsl(0, 0%, 65%);
-  --radical-red: hsl(351, 83%, 61%);
+  --radical-red: #ED3237;
   --light-gray: hsl(0, 0%, 80%);
   --isabelline: hsl(36, 33%, 94%);
   --gray-x-11: hsl(0, 0%, 73%);
@@ -39,14 +40,14 @@ html{
   --white_50: hsla(0, 0%, 100%, 0.5);
   --black_50: hsla(0, 0%, 0%, 0.5);
   --black_30: hsla(0, 0%, 0%, 0.3);
-  --kappel: hsl(170, 75%, 41%);
+  --kappel: #2A2F4B;
   --white: hsl(0, 0%, 100%);
 
   /**
    * gradient color
    */
 
-  --gradient: linear-gradient(-90deg,hsl(151, 58%, 46%) 0%,hsl(170, 75%, 41%) 100%);
+  --gradient: linear-gradient(-90deg,#ED3237,#ED3237 100%);
 
   /**
    * typography
@@ -237,6 +238,7 @@ body {
   padding: 10px 20px;
   border-radius: var(--radius-5);
   overflow: hidden;
+  border: solid white 1px;
 }
 
 .has-before,
@@ -263,8 +265,8 @@ body {
 .btn:is(:hover, :focus)::before { transform: translateX(0); }
 
 .img-holder {
-  aspect-ratio: var(--width) / var(--height);
-  background-color: var(--light-gray);
+  /* aspect-ratio: var(--width) / var(--height); */
+  /* background-color: var(--light-gray); */
   overflow: hidden;
 }
 
@@ -281,6 +283,7 @@ body {
   letter-spacing: 1px;
   text-align: center;
   margin-block-end: 15px;
+  color: var(--kappel);
 }
 
 .section-text {
@@ -294,6 +297,7 @@ body {
   gap: 30px;
 }
 
+.category { padding-block-start: 30px; }
 .category-card,
 .stats-card { background-color: hsla(var(--color), 0.1); }
 
@@ -440,15 +444,12 @@ body {
 .hero .btn { margin-inline: auto; }
 
 .hero-banner {
-  display: grid;
-  grid-template-columns: 1fr 0.8fr;
-  align-items: flex-start;
-  gap: 30px;
+  
 }
 
 .hero-banner .img-holder.one {
-  border-top-right-radius: 70px;
-  border-bottom-left-radius: 110px;
+  /* border-top-right-radius: 70px;
+  border-bottom-left-radius: 110px; */
 }
 
 .hero-banner .img-holder.two {
@@ -983,30 +984,38 @@ body {
 } */
 
 .test {
-  transform: translateX(400%);
+  transform: translateX(30%);
   transition: transform 0.4s ease;
+  opacity: 0;
+
 }
 
 .test{
-  transform: translateX(-400%);
+  transform: translateX(-30%);
+
 }
 
 .test.show {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .test1 {
-  transform: translateX(400%);
+  transform: translateX(30%);
   transition: transform 0.4s ease;
+  opacity: 0;
 }
 
 .test1{
-  transform: translateX(+400%);
+  transform: translateX(+30%);
 }
 
 .test1.show {
   transform: translateX(0);
+  opacity: 1;
 }
+
+
 
 
 
@@ -1017,6 +1026,19 @@ body {
 /**
  * responsive for large than 575px screen
  */
+
+@media(min-width: 400px){
+  .head1{
+    display: flex;
+  justify-content: center;
+  }
+  .heads{
+   text-align: center;
+  }
+  .category { padding-block-start: 30px; }
+ 
+}
+
 
 @media (min-width: 575px) {
 
@@ -1050,7 +1072,7 @@ body {
    * HERO
    */
 
-  .hero-banner { grid-template-columns: 1fr 0.9fr; }
+  /* .hero-banner { grid-template-columns: 1fr 0.9fr; } */
 
 
 
@@ -1156,12 +1178,11 @@ body {
     position: relative;
     z-index: 1;
   }
+  /* .hero-banner { padding-block-start: px; } */
 
-  .hero-banner .img-holder { max-width: max-content; }
+  /* .hero-banner .img-holder { max-width: max-content; } */
 
-  .hero-banner .img-holder.one { justify-self: flex-end; }
-
-  .hero-banner .img-holder.two { margin-block-start: 100px; }
+  /* .hero-banner .img-holder.one { justify-self: flex-end; } */
 
   .hero-shape-1 {
     display: block;
@@ -1184,8 +1205,8 @@ body {
   }
 
   .about-banner .img-holder {
-    max-width: max-content;
-    margin-inline: auto;
+    /* max-width: max-content; */
+    /* margin-inline: auto; */
   }
 
   .about-shape-1 {
@@ -1193,6 +1214,8 @@ body {
     top: -40px;
     right: -70px;
   }
+
+ 
 
 
 
@@ -1442,4 +1465,10 @@ body {
     left: 0;
   }
 
+}
+
+@media screen and  (max-width: 767px) {
+  .__pf [data-pf-type="Section"] {
+	overflow-x: hidden !important;
+  }
 }
