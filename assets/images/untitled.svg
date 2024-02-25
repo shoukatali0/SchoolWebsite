@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<svg width="722" height="528" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <defs>
+  <symbol id="svg_4" viewBox="0 0 2000 1800" xmlns="http://www.w3.org/2000/svg">
+   <path d="m1386.57,181.4c160.9,73.74 328.5,149.72 424.59,281.57c96.09,129.61 118.44,315.09 98.33,487.16c-20.11,172.07 -84.92,332.97 -187.71,446.94c-105.03,116.2 -250.29,185.48 -391.07,243.58c-138.55,60.34 -272.63,109.5 -393.31,91.62c-122.91,-17.88 -234.64,-102.8 -377.66,-160.9c-143.02,-58.1 -317.33,-87.15 -406.71,-183.24c-89.39,-96.09 -96.09,-261.46 2.23,-368.72c98.33,-109.5 301.68,-160.9 384.37,-270.4c82.68,-111.73 42.46,-283.81 84.92,-422.36c44.69,-138.55 174.31,-245.82 312.86,-265.93c140.79,-20.11 290.51,49.16 449.17,120.67l-0.01,0.01z"/>
+  </symbol>
+ </defs>
+ <g class="layer">
+  <title>Layer 1</title>
+  <path fill="#F5F2EB" id="svg_1"/>
+  <path fill="#F5F2EB" id="svg_2"/>
+  <rect fill="#F5F2EB" height="0" id="svg_3" width="0" x="-161.41" y="123"/>
+  <use fill="#ed3237" id="svg_5" transform="matrix(1 0 0 1 0 0) matrix(0.225435 0 0 0.247169 -145.425 -125.665)" x="651.43" xlink:href="#svg_4" y="561.53"/>
+  <use fill="#ed3237" id="svg_6" transform="matrix(-0.225433 0.000860448 -0.000943403 -0.247167 1174.42 864.182)" x="1977.75" xlink:href="#svg_4" y="1415.19"/>
+ </g>
+</svg>
