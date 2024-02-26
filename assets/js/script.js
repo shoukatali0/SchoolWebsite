@@ -131,35 +131,28 @@ function checkBoxes1() {
 
 // image gallary
 
-var gallery = document.querySelector('#gallery');
-var getVal = function (elem, style) { return parseInt(window.getComputedStyle(elem).getPropertyValue(style)); };
-var getHeight = function (item) { return item.querySelector('.content').getBoundingClientRect().height; };
-var resizeAll = function () {
-    var altura = getVal(gallery, 'grid-auto-rows');
-    var gap = getVal(gallery, 'grid-row-gap');
-    gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-        var el = item;
-        el.style.gridRowEnd = "span " + Math.ceil((getHeight(item) + gap) / (altura + gap));
-    });
-};
-gallery.querySelectorAll('img').forEach(function (item) {
-    item.classList.add('byebye');
-    if (item.complete) {
-        console.log(item.src);
-    }
-    else {
-        item.addEventListener('load', function () {
-            var altura = getVal(gallery, 'grid-auto-rows');
-            var gap = getVal(gallery, 'grid-row-gap');
-            var gitem = item.parentElement.parentElement;
-            gitem.style.gridRowEnd = "span " + Math.ceil((getHeight(gitem) + gap) / (altura + gap));
-            item.classList.remove('byebye');
-        });
-    }
-});
-window.addEventListener('resize', resizeAll);
-gallery.querySelectorAll('.gallery-item').forEach(function (item) {
-    item.addEventListener('click', function () {        
-        item.classList.toggle('full');        
-    });
-});
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
