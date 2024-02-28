@@ -1062,6 +1062,14 @@ body {
 .about{
   margin-top: 80px;
 }
+#anim{
+  height: 200px;
+}
+#slide{
+
+  height: auto;
+  display: block;
+}
 }
 
 
@@ -1392,6 +1400,11 @@ body {
     overflow-x: hidden;
   }
 
+  #anim{
+    height: 370px;
+  }
+  
+
   /**
    * CUSTOM PROPERTY
    */
@@ -1546,6 +1559,8 @@ body {
   border-radius: 0px;
   cursor: pointer;
   transition: 0.3s;
+  margin-top: 10px;
+  border-radius: 10px;
 }
 
 #myImg:hover {
@@ -1702,3 +1717,9 @@ body {
     padding-right: 15px;
   }
 }
+
+/* Image transition */
+
+
+
+

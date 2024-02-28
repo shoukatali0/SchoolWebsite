@@ -156,3 +156,20 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+//slider
+const first = () => {
+  document.getElementById("slide").src = "./assets/images/front2.jpeg";
+};
+setInterval(first, 4000);
+
+const second = () => {
+  document.getElementById("slide").src = "./assets/images/front1.jpg";
+};
+setInterval(second, 8000);
+
+const third = () => {
+  document.getElementById("slide").src = "./assets/images/build.png";
+};
+setInterval(third, 6000);
+
